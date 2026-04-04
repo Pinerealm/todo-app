@@ -10,9 +10,16 @@
   <body>
     <main class="app-shell">
       <section class="todo-card" aria-labelledby="todo-title">
-        <p class="eyebrow">Daily planning</p>
-        <h1 id="todo-title">Todo App</h1>
-        <p class="subtitle">Add tasks, keep track of them, and remove what’s done.</p>
+        <div class="card-header">
+          <div>
+            <p class="eyebrow">Daily planning</p>
+            <h1 id="todo-title">Todo App</h1>
+            <p class="subtitle">Add tasks, keep track of them, and remove what's done.</p>
+          </div>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-icon">🌙</span>
+          </button>
+        </div>
 
         <form id="todo-form" class="todo-form" autocomplete="off">
           <label class="sr-only" for="todo-input">Todo item</label>
